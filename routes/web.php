@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/todo/create', [TodosController::class, 'create']);
-Route::get('/todo', [TodosController::class, 'index']);
-Route::get('/todo/{todo}', [TodosController::class, 'detail']);
 
-Route::post('/todo', [TodosController::class, 'store']);
+Route::get('/todo', [TodosController::class, 'index'])->name('home');
+Route::get('/todo/create', [TodosController::class, 'create']);
+Route::post('/todo', [TodosController::class, 'store'])->name('todo_store');
+Route::get('/todo/{todo}', [TodosController::class, 'detail']);

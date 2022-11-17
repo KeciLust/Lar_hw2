@@ -27,6 +27,6 @@ class TodosController extends Controller
     public function store(Request $request)
     {
         Todo::create(['title' => $request->title, 'description' => $request->description]);
-        return redirect()->route('/todo');
+        return redirect()->route('home');
     }
 }

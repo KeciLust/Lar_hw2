@@ -22,7 +22,7 @@
                     </td>
                     <td>{{$todo->description}}</td>
                     <td>{{$todo->created_at}}</td>
-                    <td><a href="/todo"> вернуться... </a></td>
+                    <td><a href="/todo"> Вернуться... </a></td>
                 </tr>
              
             </tbody>
