@@ -21,6 +21,7 @@
             <label for="description_id">Контекст</label>
             <input type="text" name="description" id="description_id">
         </div>
+        @csrf
         <input type="submit" value="Добавить">
 
     </form>
