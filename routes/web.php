@@ -18,7 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/todo/create', [TodosController::class, 'create']);
 Route::get('/todo', [TodosController::class, 'index']);
 Route::get('/todo/{todo}', [TodosController::class, 'detail']);
-Route::get('/todo/create', [TodosController::class, 'create']);
-// Route::post('/todo', [TodosController::class, 'store']);
+
+Route::post('/todo', [TodosController::class, 'store']);

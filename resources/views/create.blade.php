@@ -13,7 +13,7 @@
 <form action="{{route('/todo')}}" method="post">
     
     <div>
-        <label for="title_id">Зоголовок</label>
+        <label for="title_id">Заголовок</label>
         <input type="text" name="title" id="title_id">
     </div>
     <div>
