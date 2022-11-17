@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TodosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/todo', [TodosController::class, 'index']);
+Route::get('/todo/{todo}', [TodosController::class, 'detail']);
+Route::get('/todo/create', [TodosController::class, 'create']);
+// Route::post('/todo', [TodosController::class, 'store']);
